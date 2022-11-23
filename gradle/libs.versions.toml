@@ -1,0 +1,24 @@
+[versions]
+paper = "1.19.2-R0.1-SNAPSHOT"
+protocolLib = "5.0.0-SNAPSHOT"
+
+junit = "5.8.2"
+mockito = "4.6.1"
+
+runPaper = "2.0.0"
+downloadTask = "5.3.0"
+licenser = "0.16.1"
+
+[libraries]
+paper = { module = "io.papermc.paper:paper-api", version.ref = "paper" }
+protocolLib = { module = "com.comphenix.protocol:ProtocolLib", version.ref = "protocolLib" }
+
+junit-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockito-junit = { module = "org.mockito:mockito-junit-jupiter", version.ref = "mockito" }
+
+[plugins]
+runPaper = { id = "xyz.jpenilla.run-paper", version.ref = "runPaper" }
+downloadTask = { id = "de.undercouch.download", version.ref = "downloadTask" }
+licenser = { id = "com.github.hierynomus.license", version.ref = "licenser" }
